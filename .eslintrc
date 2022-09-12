@@ -5,6 +5,17 @@
   },
   "rules": {
     "linebreak-style": ["error", "windows"],
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "no-underscore-dangle": "off",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ],
+    "@typescript-eslint/lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ]
   }
 }
