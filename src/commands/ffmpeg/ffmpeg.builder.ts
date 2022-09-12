@@ -7,12 +7,9 @@ export default class FfmpegCommandBuilder {
   private _outputPath = 'res.mp4';
   private options: Map<string, string> = new Map();
 
-  constructor(inputPath: string, outputPath?: string) {
+  constructor(inputPath: string) {
     this.options.set('-c:v', 'libx264');
     this._inputPath = inputPath;
-    if (outputPath) {
-      this._outputPath = outputPath;
-    }
   }
 
   input(str: string): this {
